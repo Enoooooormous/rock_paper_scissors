@@ -1,14 +1,18 @@
 # rock_paper_scissors
 An interactive game of Rock Paper Scissors using computer vision and deep learning.
 
-I grew up in the 90's. One of my first game experience was with the Master System II and a little game that came pre-installed. Alex Kidd was afraid of nothing. Except rock, paper and scissors. 
-Technology is amazing. While I reminisce hours of games played on a TV that weighted probably more than me, new kids are playing in virtual worlds, without cables. Let's meet in the middle. 
+I grew up in the 90's. One of my first game experience was with the Master System II and a little game that came pre-installed. Alex Kidd was afraid of nothing. Except rock, paper and scissors.   
+
+Technology is amazing. While I reminisce hours of games played on a TV that weighted probably more than me, new kids are playing in virtual worlds, without cables. Let's meet in the middle.   
+
 The program I created uses computer vision and deep learning to play a game of rock paper scissors in a live video stream (in this case from a webcam). Sounds impressive… It's not. In fact, it is really simple!
 
-The workflow
+The workflow   
+
 What do you need to play this game? A hand. And that's it. The program simply needs to recognize the gesture from the hand, compare it against the opponent and output the result (win, loss, draw). 
 
-1/ Identifying the hand
+1/ Identifying the hand  
+
 You could come up with a hand tracking algorithm, but I like simplicity. So I created a region of interest which is where the user has to put its hand and do the gesture. It is less flexible and "idiot proof", but it has the merits of simplifying the code. 
 We have narrowed down where the action is going to take place. But we still need to "capture the action" (meaning identify the hand). For that, there are several different approaches. The first one that I tried was to use a histogram of oriented gradients. If you don't know what that is, no worries, this is not the approach I ended up with. I just wanted to brag a little. 
 I used a simple ''background subtraction''. If you subtract the background of an image you are left with the foreground. And this is what we want here: the hand is (supposed to be) the only thing moving in the region of interest.
