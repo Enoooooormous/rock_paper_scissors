@@ -1,5 +1,5 @@
 # rock_paper_scissors
-** An interactive game of Rock Paper Scissors using computer vision and deep learning. **
+**/ An interactive game of Rock Paper Scissors using computer vision and deep learning. /**
 
 I grew up in the 90's. One of my first game experience was with the Master System II and a little game that came pre-installed. Alex Kidd was afraid of nothing. Except rock, paper and scissors.   
 
